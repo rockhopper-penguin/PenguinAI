@@ -1,5 +1,5 @@
 # TensorFlowで画像認識を行うための環境構築の方法
-
+## Windows10(Anaconda使用・不使用)とUbuntuの環境構築について
 ***
 ## Windows10の場合(Anaconda環境使用) ※オススメ
 - Anacondaのダウンロード。
@@ -101,4 +101,42 @@
 	```
 	ペンギンの種類が表示されたら成功。
 	![ペンギンの認識(非anaconda環境)](environment_img/python-recognition.png)
+***
+***
+## Ubuntuの場合(Anaconda環境不使用)
+### ※Ubuntu 18.04.2 LTS 日本語Remixを使用。
+- Python3のPipをインストール。
+
+	Python3のPipがインストールされていなかったので、Python3のPipをインストールします。
+	```
+	sudo apt-get install python3-pip
+	```
+	![Python3のpipをインストール](environment_img/python3-pip.png)
+- TensorFlowをインストール。
+
+	Python3のpipを使ってTensorFlowのインストール。
+	```
+	python3 -m pip install tensorflow
+	```
+	![TensorFlowのインストール](environment_img/ubuntu-tensorflow-install.png)
+- TensorFlow Hubをインストール。
+
+	Python3のpipを使ってTensorFlow Hubのインストール。
+	```
+	python3 -m pip install tensorflow-hub
+	```
+	![TensorFlow Hubのインストール](environment_img/ubuntu-tensorflowhub-install.png)
+- エンペラーペンギンの画像を使ってチェック。
+
+	エンペラーペンギンの画像を使って、TensorFlow、TensorFlow Hubが正常にインストール出来たかを確認する。
+	![エンペラーペンギンの親子](environment_img/emp.jpg)
+
+	実行するPythonファイルと使用する画像、学習データ、ラベルがあるディレクトリに移動して画像認識を行うコマンドを入力する。
+	```
+	python3 penguin.py --graph output_graph.pb --labels penguin_list.txt --input_layer Placeholder --output_layer final_result --image emp.jpg
+	```
+	※Python3のバージョンを指定して実行する。
+
+	ペンギンの種類が表示されたら成功。
+	![ペンギンの認識(Ubuntu)](environment_img/ubuntu-recognition.png)
 ***

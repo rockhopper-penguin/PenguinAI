@@ -1,7 +1,7 @@
 # TensorFlowで画像認識を行うための環境構築の方法
 ## Windows10(Anaconda使用・不使用)とUbuntuの環境構築について
 ***
-## Windows10の場合(Anaconda環境使用) ※オススメ
+## Windows10の場合(Anaconda環境使用)
 - Anacondaのダウンロード。
 
 	<a href="https://www.anaconda.com/" target="_blank">Anacondaのサイト</a>から、Anacondaをダウンロードする。
@@ -107,7 +107,7 @@
 ### ※Ubuntu 18.04.2 LTS 日本語Remixを使用。
 - Python3のPipをインストール。
 
-	Python3のPipがインストールされていなかったので、Python3のPipをインストールします。
+	Python3のPipがインストールされていなかったので、Python3のPipをインストールする。
 	```
 	sudo apt-get install python3-pip
 	```

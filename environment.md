@@ -40,7 +40,7 @@
 
 	TensorFlow Hubをインストールする。
 	```
-	install tensorflow-hub
+	pip install tensorflow-hub
 	```
 	![TensorFlow Hubのインストール](environment_img/anaconda-tensorflowhub-install.png)
 - エンペラーペンギンの画像を使ってチェック。
@@ -87,7 +87,7 @@
 
 	TensorFlow Hubをインストールする。
 	```
-	install tensorflow-hub
+	pip install tensorflow-hub
 	```
 	![TensorFlow Hubのインストール](environment_img/tensorflowhub-install.png)
 - エンペラーペンギンの画像を使ってチェック。

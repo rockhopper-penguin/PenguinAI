@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*base.html用css*/
 body {
     font-family: "Nico Moji";
 }
@@ -9,3 +15,22 @@ h1 {
 a {
     text-decoration: none;
 }
+
+#footer {
+    background-color: darkgray;
+    padding: 10px;
+    text-align: center;
+}
+/*base.html用cssここまで*/
+
+/*license.html用css*/
+#license {
+    width: 90%;
+    margin: auto;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+#license h1 {
+    text-align: left;
+}
+/*license.html用cssここまで*/

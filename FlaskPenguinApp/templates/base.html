@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nicomoji.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap">
     <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../static/js/footerFixed.js"></script>
     <title>ペンギン画像判定</title>
 </head>
 <body>
     <h1>rockhopper-penguin</h1>
     {% block content %}
     {% endblock %}
-    <footer>
-		<small><a href="https://github.com/rockhopper-penguin" target="_blank">&copy;Penguin</a></small>
+    <footer id="footer">
+		<small><a href="https://github.com/rockhopper-penguin" target="_blank">&copy;Penguin</a>&nbsp;<a href="/license">使用ライブラリ等のライセンスについて</a></small>
 	</footer>
 </body>
 </html>
